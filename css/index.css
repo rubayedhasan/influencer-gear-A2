@@ -497,8 +497,6 @@ footer {
         margin: 12px 0 20px;
     }
 
-    #search-bar:checked~#search-tab {}
-
     #search-tab {
         color: #0A0826;
         width: 260px;
