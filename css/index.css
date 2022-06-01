@@ -35,6 +35,11 @@ nav {
     align-items: center;
 }
 
+#navbar-toggler,
+.navbar-toggler-icon {
+    display: none;
+}
+
 .brand-name {
     color: #3A3A3A;
     font-size: 24px;
@@ -388,46 +393,6 @@ footer {
 }
 
 /* responsive part styles start */
-/* extra small device responsive part style start */
-@media screen and (min-width:320px) and (max-width:575.98px) {
-    .container {
-        width: 100%;
-    }
-}
-
-/* extra small device responsive part style end  */
-/* small device responsive part style start  */
-@media screen and (min-width:576px) and (max-width:767.98px) {
-    .container {
-        width: 540px;
-    }
-}
-
-/* small device responsive part style end  */
-/* medium device responsive part style start */
-@media screen and (min-width:768px) and (max-width:991.98px) {
-    .container {
-        width: 720px;
-    }
-}
-
-/* medium device responsive part style end  */
-/* large device responsive part style start  */
-@media screen and (min-width:992px) and (max-width:1199.98px) {
-    .container {
-        width: 960px;
-    }
-}
-
-/* large device responsive part style end  */
-/* x-large device responsive part style start */
-@media screen and (min-width:1200px) and (max-width:1399.98px) {
-    .container {
-        width: 1140px;
-    }
-}
-
-/* x-large device responsive part style end  */
 /* xx-large device responsive part style start  */
 @media screen and (min-width:1400px) {
     .container {
@@ -436,3 +401,176 @@ footer {
 }
 
 /* xx-large device responsive part style end  */
+/* x-large device responsive part style start */
+@media screen and (min-width:1200px) and (max-width:1399.98px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+/* x-large device responsive part style end  */
+/* large device responsive part style start  */
+@media screen and (min-width:992px) and (max-width:1199.98px) {
+    .container {
+        width: 960px;
+    }
+
+    nav {
+        height: 111px;
+        grid-template-columns: 0.5fr 1fr 50px;
+        align-items: center;
+    }
+
+    .banner {
+        height: calc(100vh - 111px);
+        grid-template-columns: 1.5fr 1fr;
+        grid-gap: 30px 40px;
+    }
+
+    #search-tab {
+        /* right: 23%; */
+        right: 17%;
+        top: 11.5%;
+    }
+
+    #search-bar:checked~#search-tab {
+        width: 386px;
+    }
+
+    .card {
+        width: 285px;
+    }
+
+    .feature-content {
+        margin-left: 50px;
+    }
+}
+
+/* large device responsive part style end  */
+/* medium device responsive part style start */
+@media screen and (min-width:768px) and (max-width:991.98px) {
+    .container {
+        width: 720px;
+    }
+
+    nav {
+        grid-template-columns: 50px 1fr 50px;
+    }
+
+    .navbar-toggler-icon {
+        color: #1B1B1B;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .navbar {
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        background: #065281d9;
+        transform: translateY(-550px);
+        transition: all 0.5s;
+    }
+
+    .navbar li {
+        margin: 12px 0 0;
+    }
+
+    .navbar li a {
+        color: #a1784b;
+        padding: 10px 0;
+    }
+
+
+
+    #navbar-toggler:checked~.navbar {
+        transform: translateY(0);
+    }
+
+    .search-view {
+        color: #000;
+        margin: 12px 0 20px;
+    }
+
+    #search-bar:checked~#search-tab {}
+
+    #search-tab {
+        color: #0A0826;
+        width: 260px;
+        border: 2.5px solid #000;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 15px;
+        font-weight: 600;
+        background: #E6E6E6;
+        text-transform: capitalize;
+        position: static;
+        margin-right: 5px;
+    }
+
+    .banner {
+        height: fit-content;
+        text-align: center;
+        grid-template-columns: 1fr;
+    }
+
+    .banner-left {
+        order: 2;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .banner-btn,
+    .feature-btn {
+        margin: 16px auto 0;
+    }
+
+    .banner-right img {
+        width: 60%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-content {
+        margin: 15px 0 0;
+        align-items: center;
+    }
+
+
+
+
+}
+
+/* medium device responsive part style end  */
+/* small device responsive part style start  */
+@media screen and (min-width:576px) and (max-width:767.98px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* small device responsive part style end  */
+/* x-small device responsive part style start */
+@media screen and (min-width:320px) and (max-width:575.98px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* x-small device responsive part style end  */
