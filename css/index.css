@@ -448,7 +448,7 @@ footer {
 
 /* large device responsive part style end  */
 /* medium device responsive part style start */
-@media screen and (min-width:768px) and (max-width:991.98px) {
+@media screen and (max-width:991.98px) {
     .container {
         width: 720px;
     }
@@ -537,7 +537,7 @@ footer {
     }
 
     .card {
-        width: 300px;
+        width: 315px;
     }
 
     .item {
@@ -557,9 +557,73 @@ footer {
 
 /* medium device responsive part style end  */
 /* small device responsive part style start  */
-@media screen and (min-width:576px) and (max-width:767.98px) {
+@media screen and (max-width:767.98px) {
     .container {
         width: 540px;
+    }
+
+    nav {
+        justify-items: center;
+    }
+
+    .banner-right {
+        background-size: 24em;
+    }
+
+    .top-border,
+    .bottom-border {
+        display: none;
+    }
+
+    .company-logo,
+    .feature {
+        margin: 70px 0;
+    }
+
+    .logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 350px;
+    }
+
+    .card-title {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .price {
+        font-weight: 700;
+    }
+
+    .rating span {
+        font-weight: 500;
+    }
+
+    .card-text {
+        font-weight: 400;
+    }
+
+    .feature-title {
+        font-size: 32px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .footer-text {
+        font-size: 12px;
     }
 }
 
@@ -568,6 +632,19 @@ footer {
 @media screen and (min-width:320px) and (max-width:575.98px) {
     .container {
         width: 100%;
+    }
+
+    .brand-name {
+        font-size: 20px;
+    }
+
+    .banner-title {
+        font-size: 38px;
+    }
+
+    .banner-text {
+        font-size: 14px;
+        margin-top: 15px;
     }
 }
 
