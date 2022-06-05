@@ -322,6 +322,8 @@ button.banner-btn:hover,
 
 .photo img {
     width: 100%;
+    border: 13px double #000;
+    border-radius: 22px;
 }
 
 .feature-content {
@@ -540,6 +542,10 @@ footer {
         width: 315px;
     }
 
+    .card:nth-last-child(1):nth-child(odd) {
+        grid-column: 1/ -1;
+    }
+
     .item {
         flex-direction: column;
         text-align: center;
@@ -584,6 +590,10 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .logo:nth-last-child(1):nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+
     .section-title {
         font-size: 25px;
     }
@@ -593,7 +603,7 @@ footer {
     }
 
     .card {
-        width: 350px;
+        width: 300px;
     }
 
     .card-title {
@@ -645,6 +655,10 @@ footer {
     .banner-text {
         font-size: 14px;
         margin-top: 15px;
+    }
+
+    .card {
+        width: 280px;
     }
 }
 
